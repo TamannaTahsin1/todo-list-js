@@ -33,7 +33,6 @@ function addToList(outputResult, action){
     // li.classList.add('my-4');
     // li.innerText = `${count +1}. ${outputResult} ${action}`;
     li.classList.add('my-4');
-    li.innerHTML = `${count + 1}. ${outputResult} ${action} <button class="btn btn-sm btn-success">Convert</button>`;
-
+    li.innerHTML = `${count + 1}. ${outputResult} ${action}`;
     outputValue.appendChild(li);
 }
