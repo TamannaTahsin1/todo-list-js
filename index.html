@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <!-- tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-center text-5xl font-bold mt-6 text-red-500">To Do List</h1>
+    </header>
+    <main>
+        <section>
+            <div class="mt-8 text-center">
+                <input type="text" placeholder="Type Here" id="input-type" class="w-1/4 mx-auto rounded-xl border border-solid border-red-600 inline mb-3 px-3 py-5 text-purple-800" >
+                <button onclick="addText()" class="hover:bg-black border border-solid border-red-600 rounded-xl p-5 text-orange-600 font-extrabold">ADD TEXT</button>
+            </div>
+        </section>
+        <section class="mt-10">
+        <div class="w-2/4 mx-auto flex justify-around font-semibold"> 
+            <h3>Number</h3>
+            <h3>Description</h3>
+            <h3>Action</h3>
+        </div>
+            <div class="text-center">
+                <input type="text" name="" placeholder="" id="output-result" class="w-2/4 mx-auto text-center border border-solid inline  mb-3 px-3 py-5 text-purple-800" >
+            </div>
+            <div class="flex justify-center">
+                <button  class="border border-solid rounded-xl px-6 py-3 bg-orange-600 hover:bg-sky-700 text-white">Clear All</button>
+            </div>          
+        </section>
+    </main>
+    <footer></footer>
+    <!-- javaScript link -->
+    <script src="js/todo.js"></script>
+</body>
+</html>
